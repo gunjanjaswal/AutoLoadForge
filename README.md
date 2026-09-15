@@ -1,4 +1,4 @@
-# Auto Load Forge
+# AutoLoad Forge
 
 <p align="center">
   <img src="https://img.shields.io/badge/WordPress-6.4%2B-21759B?logo=wordpress&logoColor=white" alt="WordPress 6.4+">
@@ -20,7 +20,7 @@
 
 Every WordPress request loads your autoloaded options together, in one query, before anything else runs. Plugins keep adding to that pile, and plenty of it doesn't need to be there on every page. Let it grow into the megabytes and the whole site carries the weight on each load.
 
-Most fixes mean opening phpMyAdmin and running raw SQL against `wp_options`, which is exactly where people get nervous. Auto Load Forge keeps it inside wp-admin and keeps it reversible.
+Most fixes mean opening phpMyAdmin and running raw SQL against `wp_options`, which is exactly where people get nervous. AutoLoad Forge keeps it inside wp-admin and keeps it reversible.
 
 ## What you get
 
@@ -34,7 +34,7 @@ Most fixes mean opening phpMyAdmin and running raw SQL against `wp_options`, whi
 
 ## Why it's safe
 
-Auto Load Forge never deletes an option. Switching autoload off changes one flag: whether WordPress loads that option automatically on every page. The data stays put and fully intact. If something turns out to need it, WordPress still reads it on demand, and you can restore autoloading from the same screen.
+AutoLoad Forge never deletes an option. Switching autoload off changes one flag: whether WordPress loads that option automatically on every page. The data stays put and fully intact. If something turns out to need it, WordPress still reads it on demand, and you can restore autoloading from the same screen.
 
 That's the deliberate difference from "one-click database cleaner" plugins. Nothing here is destructive, so nothing here is a gamble.
 
@@ -48,20 +48,20 @@ That's the deliberate difference from "one-click database cleaner" plugins. Noth
 **Manually**
 
 1. Copy the `autoloadforge` folder into `wp-content/plugins/`.
-2. Activate **Auto Load Forge**.
+2. Activate **AutoLoad Forge**.
 
-Then open **Tools → Auto Load Forge**.
+Then open **Tools → AutoLoad Forge**.
 
 ## How to use it
 
-1. Open **Tools → Auto Load Forge**. The cards up top tell you the total autoloaded size and whether it's in a good range.
+1. Open **Tools → AutoLoad Forge**. The cards up top tell you the total autoloaded size and whether it's in a good range.
 2. Scan the largest-options table. The "Likely source" column tells you which plugin most rows belong to.
 3. For anything you know doesn't need to load on every page, click **Stop autoloading**.
-4. Changed your mind, or something needs it back? Find it under **Switched off by Auto Load Forge** and click **Restore autoloading**.
+4. Changed your mind, or something needs it back? Find it under **Switched off by AutoLoad Forge** and click **Restore autoloading**.
 
 ## Screenshot
 
-![The Auto Load Forge screen with totals, the largest autoloaded options, and the stop-autoloading action](.wordpress-org/screenshot-1.png)
+![The AutoLoad Forge screen with totals, the largest autoloaded options, and the stop-autoloading action](.wordpress-org/screenshot-1.png)
 
 ## Requirements
 

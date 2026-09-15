@@ -1,10 +1,10 @@
-=== Auto Load Forge ===
+=== AutoLoad Forge ===
 Contributors: gunjanjaswal
 Tags: performance, autoload, options, database, optimization
 Requires at least: 6.4
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ See what is bloating your autoloaded options, trace each one to a likely plugin,
 
 Every WordPress page load pulls in your autoloaded options in one go. Over time plugins pile data into that bundle, and a lot of it does not need to load on every request. When it grows into the megabytes, every page pays for it.
 
-Auto Load Forge gives you a plain Tools screen to see the problem and act on it:
+AutoLoad Forge gives you a plain Tools screen to see the problem and act on it:
 
 * A running total of how much data autoloads, and how many options make it up.
 * The biggest autoloaded options, largest first.
@@ -29,7 +29,7 @@ No settings to configure, no external calls, no tracking. Open the page, read it
 
 1. Upload the `autoloadforge` folder to `/wp-content/plugins/`, or install it from the Plugins screen.
 2. Activate the plugin.
-3. Go to Tools then Auto Load Forge.
+3. Go to Tools then AutoLoad Forge.
 
 == Frequently Asked Questions ==
 
@@ -51,12 +51,15 @@ Keeping autoloaded data under roughly 800KB to 1MB is a sensible target. The sta
 
 == Screenshots ==
 
-1. The Auto Load Forge screen: totals, the largest autoloaded options, and the switch to stop autoloading.
+1. The AutoLoad Forge screen: totals, the largest autoloaded options, and the switch to stop autoloading.
 
 == Changelog ==
 
+= 1.0.2 =
+* Display name is now "AutoLoad Forge".
+
 = 1.0.1 =
-* Display name is now "Auto Load Forge".
+* Display name updated.
 
 = 1.0.0 =
 * First release: autoload overview, per-option source guess, and a reversible switch to stop and restore autoloading.

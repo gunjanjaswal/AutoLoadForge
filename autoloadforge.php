@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       Auto Load Forge
+ * Plugin Name:       AutoLoad Forge
  * Plugin URI:        https://github.com/gunjanjaswal/AutoLoadForge
  * Description:       See which options are bloating your autoloaded data, trace each one to a likely plugin, and switch autoload off (reversibly) from a single Tools screen.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Requires at least: 6.4
  * Requires PHP:      7.4
  * Author:            Gunjan Jaswal
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AUTOLOADFORGE_VERSION', '1.0.1' );
+define( 'AUTOLOADFORGE_VERSION', '1.0.2' );
 
 /**
  * Store or retrieve the admin page hook suffix.
@@ -40,8 +40,8 @@ function autoloadforge_page_hook( $set = null ) {
  */
 function autoloadforge_admin_menu() {
 	$hook = add_management_page(
-		__( 'Auto Load Forge', 'autoloadforge' ),
-		__( 'Auto Load Forge', 'autoloadforge' ),
+		__( 'AutoLoad Forge', 'autoloadforge' ),
+		__( 'AutoLoad Forge', 'autoloadforge' ),
 		'manage_options',
 		'autoloadforge',
 		'autoloadforge_render_page'
@@ -256,7 +256,7 @@ function autoloadforge_render_page() {
 	$msg = isset( $_GET['alf_msg'] ) ? sanitize_key( wp_unslash( $_GET['alf_msg'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 	?>
 	<div class="wrap autoloadforge">
-		<h1><?php esc_html_e( 'Auto Load Forge', 'autoloadforge' ); ?></h1>
+		<h1><?php esc_html_e( 'AutoLoad Forge', 'autoloadforge' ); ?></h1>
 
 		<?php if ( 'stopped' === $msg ) : ?>
 			<div class="notice notice-success is-dismissible"><p><?php esc_html_e( 'Autoload switched off for that option.', 'autoloadforge' ); ?></p></div>
@@ -319,7 +319,7 @@ function autoloadforge_render_page() {
 		</table>
 
 		<?php if ( ! empty( $disabled ) ) : ?>
-			<h2><?php esc_html_e( 'Switched off by Auto Load Forge', 'autoloadforge' ); ?></h2>
+			<h2><?php esc_html_e( 'Switched off by AutoLoad Forge', 'autoloadforge' ); ?></h2>
 			<p class="description"><?php esc_html_e( 'These options no longer autoload. Restore any of them if you notice something needs it back.', 'autoloadforge' ); ?></p>
 			<table class="widefat striped">
 				<thead>
