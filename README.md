@@ -3,9 +3,9 @@
 <p align="center">
   <img src="https://img.shields.io/badge/WordPress-6.4%2B-21759B?logo=wordpress&logoColor=white" alt="WordPress 6.4+">
   <img src="https://img.shields.io/badge/PHP-7.4%2B-777BB4?logo=php&logoColor=white" alt="PHP 7.4+">
-  <img src="https://img.shields.io/badge/Tested%20up%20to-7.1-21759B?logo=wordpress&logoColor=white" alt="Tested up to 7.1">
+  <img src="https://img.shields.io/badge/Tested%20up%20to-7.1.4-21759B?logo=wordpress&logoColor=white" alt="Tested up to 7.1.4">
   <img src="https://img.shields.io/badge/License-GPLv2%2B-3DA639?logo=gnu&logoColor=white" alt="License GPLv2+">
-  <img src="https://img.shields.io/badge/version-1.0.0-brightgreen" alt="Version 1.0.0">
+  <img src="https://img.shields.io/badge/version-1.1.1-brightgreen" alt="Version 1.1.1">
   <img src="https://img.shields.io/badge/deletes%20nothing-safe-blue" alt="Deletes nothing">
 </p>
 
@@ -67,6 +67,25 @@ Then open **Tools → AutoLoad Forge**.
 
 - WordPress 6.4 or newer (uses the core autoload API added in 6.4)
 - PHP 7.4 or newer
+
+## Changelog
+
+### 1.1.1
+- Tested and confirmed compatible with WordPress 7.1.4.
+
+### 1.1.0
+- New: a weekly automatic audit keeps an eye on your autoloaded options and nudges you with a dismissible notice if they grow too heavy, so you do not have to remember to check.
+- New: a WordPress Site Health test reports your autoloaded size and flags when it goes past the recommended ceiling, with a link straight to the AutoLoad Forge screen.
+- The screen now shows when the last automatic check ran and whether your autoload size went up or down since the previous one.
+
+### 1.0.2
+- Display name is now "AutoLoad Forge".
+
+### 1.0.1
+- Display name updated.
+
+### 1.0.0
+- First release: autoload overview, per-option source guess, and a reversible switch to stop and restore autoloading.
 
 ## Support
 
