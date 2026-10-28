@@ -3,7 +3,7 @@
  * Plugin Name:       AutoLoad Forge
  * Plugin URI:        https://github.com/gunjanjaswal/AutoLoadForge
  * Description:       See which options are bloating your autoloaded data, trace each one to a likely plugin, and switch autoload off (reversibly) from a single Tools screen.
- * Version:           1.1.0
+ * Version:           1.1.1
  * Requires at least: 6.4
  * Requires PHP:      7.4
  * Author:            Gunjan Jaswal
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AUTOLOADFORGE_VERSION', '1.1.0' );
+define( 'AUTOLOADFORGE_VERSION', '1.1.1' );
 
 /**
  * Store or retrieve the admin page hook suffix.

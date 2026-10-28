@@ -2,9 +2,9 @@
 Contributors: gunjanjaswal
 Tags: performance, autoload, options, database, optimization
 Requires at least: 6.4
-Tested up to: 7.1
+Tested up to: 7.1.4
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,6 +54,9 @@ Keeping autoloaded data under roughly 800KB to 1MB is a sensible target. The sta
 1. The AutoLoad Forge screen: totals, the largest autoloaded options, and the switch to stop autoloading.
 
 == Changelog ==
+
+= 1.1.1 =
+* Tested and confirmed compatible with WordPress 7.1.4.
 
 = 1.1.0 =
 * New: a weekly automatic audit keeps an eye on your autoloaded options and nudges you with a dismissible notice if they grow too heavy, so you do not have to remember to check.
